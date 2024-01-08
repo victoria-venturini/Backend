@@ -1,0 +1,191 @@
+[
+  {
+    "title": "Producto 1",
+    "description": "Descripción del producto 1",
+    "price": 24.99,
+    "thumbnail": "path/to/image1.jpg",
+    "code": "P001",
+    "stock": 90,
+    "id": 1
+  },
+  {
+    "title": "Producto 1",
+    "description": "Descripción del producto 1",
+    "price": 19.99,
+    "thumbnail": "path/to/image1.jpg",
+    "code": "P001",
+    "stock": 100,
+    "id": 3
+  },
+  {
+    "title": "Producto 2",
+    "description": "Descripción del producto 2",
+    "price": 29.99,
+    "thumbnail": "path/to/image2.jpg",
+    "code": "P002",
+    "stock": 50,
+    "id": 4
+  },
+  {
+    "title": "Producto 1",
+    "description": "Descripción del producto 1",
+    "price": 19.99,
+    "thumbnail": "path/to/image1.jpg",
+    "code": "P001",
+    "stock": 100,
+    "id": 5
+  },
+  {
+    "title": "Producto 2",
+    "description": "Descripción del producto 2",
+    "price": 29.99,
+    "thumbnail": "path/to/image2.jpg",
+    "code": "P002",
+    "stock": 50,
+    "id": 6
+  },
+  {
+    "title": "Producto 1",
+    "description": "Descripción del producto 1",
+    "price": 19.99,
+    "thumbnail": "path/to/image1.jpg",
+    "code": "P001",
+    "stock": 100,
+    "id": 7
+  },
+  {
+    "title": "Producto 2",
+    "description": "Descripción del producto 2",
+    "price": 29.99,
+    "thumbnail": "path/to/image2.jpg",
+    "code": "P002",
+    "stock": 50,
+    "id": 8
+  },
+  {
+    "title": "Producto 1",
+    "description": "Descripción del producto 1",
+    "price": 19.99,
+    "thumbnail": "path/to/image1.jpg",
+    "code": "P001",
+    "stock": 100,
+    "id": 9
+  },
+  {
+    "title": "Producto 2",
+    "description": "Descripción del producto 2",
+    "price": 29.99,
+    "thumbnail": "path/to/image2.jpg",
+    "code": "P002",
+    "stock": 50,
+    "id": 10
+  },
+  {
+    "title": "Producto 1",
+    "description": "Descripción del producto 1",
+    "price": 19.99,
+    "thumbnail": "path/to/image1.jpg",
+    "code": "P001",
+    "stock": 100,
+    "id": 11
+  },
+  {
+    "title": "Producto 2",
+    "description": "Descripción del producto 2",
+    "price": 29.99,
+    "thumbnail": "path/to/image2.jpg",
+    "code": "P002",
+    "stock": 50,
+    "id": 12
+  },
+  {
+    "title": "Producto 1",
+    "description": "Descripción del producto 1",
+    "price": 19.99,
+    "thumbnail": "path/to/image1.jpg",
+    "code": "P001",
+    "stock": 100,
+    "id": 13
+  },
+  {
+    "title": "Producto 2",
+    "description": "Descripción del producto 2",
+    "price": 29.99,
+    "thumbnail": "path/to/image2.jpg",
+    "code": "P002",
+    "stock": 50,
+    "id": 14
+  },
+  {
+    "title": "Producto 1",
+    "description": "Descripción del producto 1",
+    "price": 19.99,
+    "thumbnail": "path/to/image1.jpg",
+    "code": "P001",
+    "stock": 100,
+    "id": 15
+  },
+  {
+    "title": "Producto 2",
+    "description": "Descripción del producto 2",
+    "price": 29.99,
+    "thumbnail": "path/to/image2.jpg",
+    "code": "P002",
+    "stock": 50,
+    "id": 16
+  },
+  {
+    "title": "Producto 1",
+    "description": "Descripción del producto 1",
+    "price": 19.99,
+    "thumbnail": "path/to/image1.jpg",
+    "code": "P001",
+    "stock": 100,
+    "id": 17
+  },
+  {
+    "title": "Producto 2",
+    "description": "Descripción del producto 2",
+    "price": 29.99,
+    "thumbnail": "path/to/image2.jpg",
+    "code": "P002",
+    "stock": 50,
+    "id": 18
+  },
+  {
+    "title": "Producto 1",
+    "description": "Descripción del producto 1",
+    "price": 19.99,
+    "thumbnail": "path/to/image1.jpg",
+    "code": "P001",
+    "stock": 100,
+    "id": 19
+  },
+  {
+    "title": "Producto 2",
+    "description": "Descripción del producto 2",
+    "price": 29.99,
+    "thumbnail": "path/to/image2.jpg",
+    "code": "P002",
+    "stock": 50,
+    "id": 20
+  },
+  {
+    "title": "Producto 1",
+    "description": "Descripción del producto 1",
+    "price": 19.99,
+    "thumbnail": "path/to/image1.jpg",
+    "code": "P001",
+    "stock": 100,
+    "id": 21
+  },
+  {
+    "title": "Producto 2",
+    "description": "Descripción del producto 2",
+    "price": 29.99,
+    "thumbnail": "path/to/image2.jpg",
+    "code": "P002",
+    "stock": 50,
+    "id": 22
+  }
+]
