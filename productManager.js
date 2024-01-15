@@ -13,7 +13,7 @@ class ProductManager {
     return product;
   }
 
-  async getProducts() {
+  async getAllProducts() {
     return await this.getProductsFromFile();
   }
 
@@ -88,8 +88,7 @@ const productManager = new ProductManager('products.json');
     stock: 50
   });
 
-  const Products = await productManager.getProducts();
-  console.log('Productos:', Products);
+
 
   
   const allProducts = await productManager.getAllProducts();
