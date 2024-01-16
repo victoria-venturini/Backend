@@ -13,8 +13,20 @@ class ProductManager {
     return product;
   }
 
-  async getAllProducts() {
-    return await this.getProductsFromFile();
+  async getProducts(limit) {
+    try {
+      const content = await fs.readFile(this.path, 'utf-8');
+      const products = JSON.parse(content) || [];
+  
+      if (limit !== undefined) {
+        return products.slice(0, limit);
+      }
+  
+      return products;
+    } catch (error) {
+      console.error(error);
+      return [];
+    }
   }
 
   async getProductById(productId) {
@@ -30,19 +42,6 @@ class ProductManager {
       products[index] = { ...products[index], ...updatedFields };
       await this.saveProductsToFile(products);
       return products[index];
-    } else {
-      throw new Error('Product not found');
-    }
-  }
-
-  async deleteProduct(productId) {
-    let products = await this.getProductsFromFile();
-    const index = products.findIndex(product => product.id === productId);
-
-    if (index !== -1) {
-      const deletedProduct = products.splice(index, 1)[0];
-      await this.saveProductsToFile(products);
-      return deletedProduct;
     } else {
       throw new Error('Product not found');
     }
@@ -91,17 +90,14 @@ const productManager = new ProductManager('products.json');
 
 
   
-  const allProducts = await productManager.getAllProducts();
-  console.log('Todos los productos:', allProducts);
+  const products = await productManager.getProducts();
+  console.log('Todos los productos:', products);
 
   const productById = await productManager.getProductById(1);
   console.log('Producto con ID 1:', productById);
 
   await productManager.updateProduct(1, { price: 24.99, stock: 90 });
   console.log('Producto actualizado:', await productManager.getProductById(1));
-
-  const deletedProduct = await productManager.deleteProduct(2);
-  console.log('Producto eliminado:', deletedProduct);
 
   const remainingProducts = await productManager.getProducts();
   console.log('Productos restantes:', remainingProducts);
