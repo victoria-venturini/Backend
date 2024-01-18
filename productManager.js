@@ -1,4 +1,4 @@
-const fs = require('fs');
+const fs = require('fs/promises');
 
 class ProductManager {
   constructor(filePath) {
@@ -49,7 +49,7 @@ class ProductManager {
 
   async getProductsFromFile() {
     try {
-      const data = await fs.promises.readFile(this.path, 'utf8');
+      const data = await fs.readFile(this.path, 'utf8');
       return JSON.parse(data) || [];
     } catch (error) {
       return [];
@@ -57,7 +57,7 @@ class ProductManager {
   }
 
   async saveProductsToFile(products) {
-    await fs.promises.writeFile(this.path, JSON.stringify(products, null, 2), 'utf8');
+    await fs.writeFile(this.path, JSON.stringify(products, null, 2), 'utf8');
   }
 
   generateUniqueId(products) {

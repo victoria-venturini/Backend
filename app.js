@@ -4,7 +4,7 @@ const ProductManager = require('./productManager');
 const app = express();
 const port = 3000; 
 
-const productManager = new ProductManager(); 
+const productManager = new ProductManager('./products.json'); 
 
 
 app.get('/products', async (req, res) => {
@@ -20,10 +20,16 @@ app.get('/products', async (req, res) => {
 
 
 
+
 app.get('/products/:pid', (req, res) => {
   const productId = parseInt(req.params.pid, 10);
   const product = productManager.getProductById(productId);
   res.json({ product });
+});
+
+
+app.get('/', (req, res) => {
+  res.send('Bienvenidos')
 });
 
 
